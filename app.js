@@ -3,6 +3,7 @@ const app = express();
 const cors = require('cors');
 const bodyParser = require("body-parser");
 const fs = require('fs');
+const recordClass = require('./record');
 
 app.use(cors());
 app.use(bodyParser.json());

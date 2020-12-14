@@ -18,7 +18,12 @@
                 });
 
                 function addRecord() {
-                    let entry = $("#item").val()
+                    let entry = [
+                        // $("#item").val(),
+                        $("#artist").val(),
+                        $("#title").val(),
+                        $("#genre").val()
+                    ];
                     if (entry.length < 1) {
                         alert("Please enter a record item.")
                         return
@@ -80,7 +85,10 @@
               
         <div id="addItem">
             Add a record entry:
-            <input id="item" type="text" name="add_item"/>
+            <!-- <input id="item" type="text" name="add_item"/> -->
+            <input id="artist" type="text" name="add_item" placeholder="enter artist"/>
+            <input id="title" type="text" name="add_item" placeholder="enter album title"/>
+            <input id="genre" type="text" name="add_item" placeholder="enter genre"/>
             <button id="submit" type="button">Submit</button>
             <button id="clear" type="button">Clear All</button>
         </div>

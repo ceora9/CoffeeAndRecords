@@ -1,0 +1,29 @@
+body{
+    background-color: lightgrey;
+    font-family: monospace;
+    font-size: larger;
+    margin: 50px;
+}
+
+.activities-list:hover{ 
+    color: rebeccapurple;
+    font-weight: bolder;   
+}
+
+h1, h4{
+    color: rebeccapurple;
+}
+
+button{
+    border-radius: 10px;
+    font-family: monospace;
+}
+
+button:hover{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+ul, li{
+    list-style: none;
+}
